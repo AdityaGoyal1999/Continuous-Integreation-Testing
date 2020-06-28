@@ -2,3 +2,9 @@ language: python
 python: 3.6
 install: pip install -r requirements.txt
 script: python manage.py test
+deploy:
+  provider: heroku
+  api_key: 6f6dfdca-9c11-4d4c-bbcd-528da431e61f
+  app: database-aditya
+  run: python manage.py migrate
+  on: master

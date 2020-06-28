@@ -1,0 +1,1 @@
+web: gunicorn Continuous-Integreation-Testing.wsgi
